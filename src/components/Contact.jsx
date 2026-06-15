@@ -7,19 +7,19 @@ return ( <section id="contact"> <div className="container"> <p className="sectio
     <div className="contact-card">
       <p className="contact-text">
         I'm currently looking for internship and full-time opportunities.
-        Feel free to reach out if you'd like to connect or collaborate.
+        Feel free to connect with me through email, LinkedIn, or GitHub.
       </p>
 
       <div className="contact-links">
         <a
-          href="mailto:yourmail@gmail.com"
+          href="mailto:kanishkacu888@gmail.com"
           className="contact-btn"
         >
           📧 Email Me
         </a>
 
         <a
-          href="https://linkedin.com/in/YOUR_LINKEDIN"
+          href="https://www.linkedin.com/in/kanishkacu"
           target="_blank"
           rel="noreferrer"
           className="contact-btn"
@@ -28,7 +28,7 @@ return ( <section id="contact"> <div className="container"> <p className="sectio
         </a>
 
         <a
-          href="https://github.com/YOUR_GITHUB"
+          href="https://github.com/KanishkaCU"
           target="_blank"
           rel="noreferrer"
           className="contact-btn"

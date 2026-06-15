@@ -2,12 +2,14 @@ import { useState } from "react";
 import "./Navbar.css";
 
 const NAV_LINKS = [
-    { id: "home", label: "Home" },
+  { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
+
   { id: "contact", label: "Contact" },
-  { id: "resume", label: "Resume" },
+    { id: "resume", label: "Resume" },
+
 ];
 
 export default function Navbar({ activeSection }) {

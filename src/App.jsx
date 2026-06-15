@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 import "./index.css";
 
 export default function App() {
@@ -20,7 +22,7 @@ export default function App() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -39,6 +41,8 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
+        <Resume />
       </main>
     </div>
   );
