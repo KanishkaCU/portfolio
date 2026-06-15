@@ -43,7 +43,15 @@ body {
   padding: 0 24px;
 }
 
-section { padding: 96px 0; }
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
 
 section:nth-child(even) { background: #f4f4f0; }
 
@@ -112,3 +120,25 @@ section:nth-child(even) { background: #f4f4f0; }
 }
 
 .btn-outline:hover { border-color: var(--accent); background: var(--accent-light); transform: translateY(-1px); }
+.section-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .section-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}

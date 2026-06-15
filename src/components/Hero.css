@@ -226,14 +226,20 @@
 
 /* ── Mobile ── */
 @media (max-width: 768px) {
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+@media (max-width: 768px) {
   .hero-inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
-    gap: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    min-height: auto;
+    gap: 30px;
   }
+}
 
   .hero-left { width: 100%; }
 
@@ -257,4 +263,9 @@
   .hero-tag-outline { justify-content: center; }
   .hero-actions     { justify-content: center; }
   .hero-desc        { max-width: 100%; }
+}
+.float-icon {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }

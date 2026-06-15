@@ -63,7 +63,7 @@ export default function Hero() {
               <circle cx="180" cy="400" r="7" fill="#2563eb" />
             </svg>
 
-            <div className="float-icon float-about">
+            <a href="#about" className="float-icon float-about">
               <div className="float-icon-circle">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -71,9 +71,9 @@ export default function Hero() {
                 </svg>
               </div>
               <span>About</span>
-            </div>
+            </a>
 
-            <div className="float-icon float-skills">
+            <a href="#skills" className="float-icon float-skills">
               <div className="float-icon-circle">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="7" width="20" height="14" rx="2"/>
@@ -83,18 +83,18 @@ export default function Hero() {
                 </svg>
               </div>
               <span>Skills</span>
-            </div>
+            </a>
 
-            <div className="float-icon float-projects">
+            <a href="#projects" className="float-icon float-projects">
               <div className="float-icon-circle">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
                 </svg>
               </div>
               <span>Projects</span>
-            </div>
+            </a>
 
-            <div className="float-icon float-contact">
+           <a href="#contact" className="float-icon float-contact">
               <div className="float-icon-circle">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -102,7 +102,7 @@ export default function Hero() {
                 </svg>
               </div>
               <span>Contact</span>
-            </div>
+            </a>
 
           </div>
         </div>

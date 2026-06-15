@@ -1,8 +1,13 @@
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 260px;
-  gap: 64px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about-text {
