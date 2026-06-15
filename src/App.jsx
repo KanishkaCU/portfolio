@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 import About from "./components/About";
 import "./index.css";
 
@@ -28,7 +29,7 @@ export default function App() {
       <Navbar activeSection={activeSection} />
       <main>
         <Hero />
-        <About />
+        <Skills />
       </main>
     </div>
   );
