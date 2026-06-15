@@ -1,0 +1,260 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-height);
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  min-height: calc(100vh - var(--nav-height));
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-left { flex: 1; }
+
+.hero-greeting {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.hero-name {
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 7vw, 76px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.hero-tag-outline {
+  display: inline-flex;
+  margin-bottom: 28px;
+}
+
+.hero-tag-outline span {
+  display: inline-block;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border: 2px solid var(--text-primary);
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.hero-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 460px;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #111110;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 24px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-github:hover { background: #333; transform: translateY(-1px); }
+
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-linkedin:hover { background: var(--accent-light); transform: translateY(-1px); }
+
+/* ── Right side ── */
+.hero-right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-photo-area {
+  position: relative;
+  width: 480px;
+  height: 420px;
+}
+
+.hero-img {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  z-index: 1;
+}
+
+.hero-arc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 420px;
+  z-index: 0;
+}
+
+/* ── Float icons ── */
+.float-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.float-icon:hover { transform: translateX(4px); }
+
+.float-icon span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.float-icon-circle {
+  width: 52px;
+  height: 52px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+}
+
+.float-about    { top: 10px;  left: 270px; }
+.float-skills   { top: 110px; left: 355px; }
+.float-projects { top: 235px; left: 355px; }
+.float-contact  { top: 345px; left: 270px; }
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .hero-photo-area {
+    width: 380px;
+    height: 360px;
+  }
+
+  .hero-img {
+    width: 240px;
+    height: 240px;
+    left: 10px;
+  }
+
+  .hero-arc {
+    width: 380px;
+    height: 360px;
+  }
+
+  .float-about    { top: 5px;   left: 210px; }
+  .float-skills   { top: 90px;  left: 290px; }
+  .float-projects { top: 200px; left: 290px; }
+  .float-contact  { top: 295px; left: 210px; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: auto;
+  }
+
+  .hero-left { width: 100%; }
+
+  .hero-photo-area {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-img {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-arc   { display: none; }
+  .float-icon { display: none; }
+
+  .hero-tags        { justify-content: center; flex-wrap: wrap; }
+  .hero-tag-outline { justify-content: center; }
+  .hero-actions     { justify-content: center; }
+  .hero-desc        { max-width: 100%; }
+}
