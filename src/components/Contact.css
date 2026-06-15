@@ -1,0 +1,36 @@
+.contact-card {
+background: var(--bg-card);
+border: 1px solid var(--border);
+border-radius: var(--radius-lg);
+padding: 32px;
+text-align: center;
+}
+
+.contact-text {
+max-width: 700px;
+margin: 0 auto 24px;
+color: var(--text-secondary);
+line-height: 1.8;
+}
+
+.contact-links {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 16px;
+}
+
+.contact-btn {
+text-decoration: none;
+padding: 12px 20px;
+border-radius: 10px;
+border: 1px solid var(--accent);
+color: var(--accent);
+font-weight: 600;
+transition: 0.2s;
+}
+
+.contact-btn:hover {
+background: var(--accent);
+color: white;
+}
