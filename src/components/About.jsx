@@ -1,7 +1,7 @@
 import "./About.css";
 
 const STATS = [
-  { value: "4th", label: "Year Student" },
+  { value: "Final", label: "Year Student" },
   { value: "MERN", label: "Stack" },
   { value: "Python", label: "Developer" },
   { value: "AI&DS", label: "Specialization" },
