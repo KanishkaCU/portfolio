@@ -31,6 +31,6 @@ transition: 0.2s;
 }
 
 .contact-btn:hover {
-background: var(--accent);
+background: transparent;
 color: white;
 }

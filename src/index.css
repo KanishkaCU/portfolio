@@ -3,8 +3,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #fafaf8;
-  --bg-card: #ffffff;
+  --bg: #D7E4DB;
+  --bg-card: #e6efe8;
   --text-primary: #111110;
   --text-secondary: #6b6b66;
   --text-muted: #9c9c96;
@@ -53,7 +53,9 @@ section {
   width: 100%;
 }
 
-section:nth-child(even) { background: #f4f4f0; }
+section:nth-child(even) {
+  background: transparent;
+}
 
 .section-label {
   font-size: 11px;
@@ -141,4 +143,11 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+}
+:root {
+  --bg-main: #D7E4DB;
+}
+
+body {
+  background-color: var(--bg-main);
 }
