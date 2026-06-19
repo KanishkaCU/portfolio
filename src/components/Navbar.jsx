@@ -6,10 +6,7 @@ const NAV_LINKS = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
-
   { id: "contact", label: "Contact" },
-    { id: "resume", label: "Resume" },
-
 ];
 
 export default function Navbar({ activeSection }) {
@@ -20,7 +17,7 @@ export default function Navbar({ activeSection }) {
       <div className="nav-inner">
 
         <a href="#home" className="nav-logo">
-          Kanishka<span></span>
+          Kanishka<span>.</span>
         </a>
 
         <ul className={`nav-links ${open ? "open" : ""}`}>
@@ -35,11 +32,22 @@ export default function Navbar({ activeSection }) {
               </a>
             </li>
           ))}
+
+          <li>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1pduytemPyohkxjgeS95SZhXAQq1TlwIR"
+              className="resume-btn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         <button
           className="hamburger"
-          onClick={() => setOpen((o) => !o)}
+          onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
           <span />

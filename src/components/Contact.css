@@ -2,35 +2,71 @@
 background: var(--bg-card);
 border: 1px solid var(--border);
 border-radius: var(--radius-lg);
-padding: 32px;
+
+padding: 50px;
 text-align: center;
+
+box-shadow: var(--shadow-md);
 }
 
 .contact-text {
 max-width: 700px;
-margin: 0 auto 24px;
+margin: 0 auto 36px;
+
 color: var(--text-secondary);
-line-height: 1.8;
+font-size: 17px;
+line-height: 1.9;
 }
 
 .contact-links {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-gap: 16px;
+gap: 18px;
 }
 
 .contact-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+min-width: 180px;
+
+padding: 14px 24px;
+
+background: var(--bg);
+
+border: 1px solid var(--border);
+border-radius: 14px;
+
 text-decoration: none;
-padding: 12px 20px;
-border-radius: 10px;
-border: 1px solid var(--accent);
-color: var(--accent);
+
+color: var(--text-primary);
 font-weight: 600;
-transition: 0.2s;
+font-size: 15px;
+
+transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
-background: transparent;
-color: white;
+background: var(--text-primary);
+color: var(--bg-card);
+
+transform: translateY(-4px);
+
+box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+.contact-card {
+padding: 30px;
+}
+
+.contact-links {
+flex-direction: column;
+}
+
+.contact-btn {
+width: 100%;
+}
 }

@@ -4,7 +4,7 @@ const SKILL_GROUPS = [
   {
     category: "Frontend",
     icon: "🎨",
-    skills: ["React.js", "HTML5", "CSS3", "JavaScript (ES6+)"],
+    skills: ["React.js", "HTML5", "CSS3", "JavaScript"],
   },
   {
     category: "Backend",
@@ -17,14 +17,14 @@ const SKILL_GROUPS = [
     skills: ["MongoDB", "MySQL"],
   },
   {
-    category: "Tools & Others",
+    category: "Tools",
     icon: "🛠️",
     skills: ["Git", "GitHub", "VS Code"],
   },
   {
     category: "AI & Data Science",
     icon: "🤖",
-    skills: ["Python", "Pandas", "NumPy", "Machine Learning"],
+    skills: ["Pandas", "NumPy", "Machine Learning"],
   },
 ];
 
@@ -32,19 +32,34 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="container">
-        <p className="section-label">What I work with</p>
+
+        <p className="section-label">Expertise</p>
         <h2 className="section-title">Skills & Technologies</h2>
 
         <div className="skills-grid">
           {SKILL_GROUPS.map((group) => (
-            <div key={group.category} className="skill-group">
+            <div
+              key={group.category}
+              className="skill-group"
+            >
               <div className="skill-group-header">
-                <span className="skill-icon">{group.icon}</span>
-                <h3 className="skill-category">{group.category}</h3>
+                <span className="skill-icon">
+                  {group.icon}
+                </span>
+
+                <h3 className="skill-category">
+                  {group.category}
+                </h3>
               </div>
+
               <div className="skill-tags">
                 {group.skills.map((skill) => (
-                  <span key={skill} className="skill-tag">{skill}</span>
+                  <span
+                    key={skill}
+                    className="skill-tag"
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
